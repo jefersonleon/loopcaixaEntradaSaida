@@ -22,14 +22,26 @@ public class ProjetoLoopDoWhile {
                valor = ler.nextDouble();
                acDebito = acDebito + valor;
                cDebito = cDebito + 1;
+               System.out.println("Valor do Crédito R$"+acCredito);
+               System.out.println("Valor do Débito R$"+acDebito);
+               System.out.println("------------------------------");
+                System.out.println("O seu saldo é R$ "
+                       +(acCredito - acDebito));
            }else if(opcao == 2){
                System.out.println("Digite o valor do Crédito");
                valor = ler.nextDouble();
                acCredito = acCredito + valor;
                cCredito = cCredito + 1;
+               System.out.println("Valor do Crédito R$"+acCredito);
+               System.out.println("Valor do Débito R$"+acDebito);
+               System.out.println("------------------------------");
+                System.out.println("O seu saldo é R$ "
+                       +(acCredito - acDebito));
            }else if(opcao == 0){
                System.out.println("O seu saldo do dia é de R$ "
                        +(acCredito - acDebito));
+               System.out.println("Nº de creditos:"+cCredito
+                       +"\nNº de Débitos:"+cDebito);
                System.out.println("Bye !!!!");
            }else{
                System.out.println("digite apenas 1 ou 2 ou 0, Xiruzão");
